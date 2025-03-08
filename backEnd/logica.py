@@ -2,9 +2,15 @@ import json
 import os
 
 class Tarefas:
-    def __init__(self,descricao, status):
+    def __init__(self,descricao, status=False):
         self.descricao = descricao
         self.status = status
+
+    def to_dic(self):
+        return{
+            "descrição": self.descricao,
+            "status": self.status
+        }
 
 
 # Classe que vai gerenciar as tarefas
@@ -14,3 +20,5 @@ class Tarefas:
 # vai ter um método para carregar as tarefas de um arquivo json
 class GerenciadorTrafeas:
     pass
+
+logica = GerenciadorTrafeas()

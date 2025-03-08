@@ -1,11 +1,11 @@
 import streamlit as st
-from backEnd.logica import minha_logica
+from backEnd.logica import logica
 
 def main():
     st.title("Gerenciador de Tarefas!")
 
     if "tarefas" not in st.session_state:
-        st.session_state.tarefas = minha_logica()
+        st.session_state.tarefas = logica.listar_tarefas()
 
     #campo para adicionar as tarefas
 
@@ -18,3 +18,4 @@ def main():
     # Listar tarefas
 
     st.write("### listar Tarefas")
+    
