@@ -1,0 +1,30 @@
+{
+    "nome": "Meu banco",
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Yamandu",
+            "valor_anuidade": 4000.0,
+            "saldo_conta": 6499.99,
+            "divida_emprestimo": []
+        },
+        {
+            "id": 2,
+            "nome": "Erick",
+            "valor_anuidade": 4000.0,
+            "saldo_conta": 4500.01,
+            "divida_emprestimo": []
+        }
+    ],
+    "transacoes": [
+        {
+            "id_transacao": 1,
+            "tipo": "rapida",
+            "valor": 500.01,
+            "pagador_id": 1,
+            "beneficiario_id": 2,
+            "data": "2025-03-14 15:29:39"
+        }
+    ],
+    "investidor": []
+}
